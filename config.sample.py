@@ -7,6 +7,7 @@ telegram_token = ''
 sentry = ''
 
 # Configuration
+current_domain = "url:port"
 redirect_url = "http://{current_domain}/auth"
 auth_link = f"https://api.intra.42.fr/oauth/authorize?client_id={key}&redirect_uri={redirect_url}&response_type=code&scope=public"
 redis_host = "127.0.0.1"

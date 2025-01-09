@@ -9,7 +9,7 @@ if __name__ == '__main__':
 		for campus in campuses:
 			print(f'updating campus {campus}...')
 			try:
-				req = requests.get(f'http://127.0.0.1:8000/locations/{config.update_key}/{campus}')
+				req = requests.get(f'http://{config.current_domain}/locations/{config.update_key}/{campus}')
 				print(req.status_code)
 			except requests.exceptions.RequestException:
 				print('failed req')
